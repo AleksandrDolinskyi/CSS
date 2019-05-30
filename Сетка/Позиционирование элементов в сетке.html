@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Позиционирование элементов в сетке</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<div class="grid-container">
+  <div class="grid-element item-a">A</div>
+  <div class="grid-element item-b">B</div>
+  <div class="grid-element item-c">C</div>
+  <div class="grid-element item-d">D</div>
+  <div class="grid-element item-e">E</div>
+  <div class="grid-element item-f">F</div>
+</div>
+<style type="text/css">
+
+/*
+
+С помощью свойств grid-template-columns и grid-template-rows задается ширина строк и колонок. В примере я создал 5 колонок. Колонка шириной 10px используется в качестве разделителя между элементами. Первая колонка имеет ширину 200px. Третья колонка занимает 0.3 части от оставшегося пространства. А пятая колонка занимает 0.7 от оставшегося пространства.
+
+*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 10px 0.3fr 10px 0.7fr;
+  grid-template-rows: auto 20px auto;
+}
+</style>
+</body>
+</html>

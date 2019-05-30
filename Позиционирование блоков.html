@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Позиционирование блоков</title>
+</head>
+<body>
+<div id="wrapper">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</div>  
+<style type="text/css">
+.one, .two, .three {
+    width: 200px;
+    height: 150px;
+}
+.one {
+    background-color: red;
+    position: absolute;
+}
+.two {
+	top: 10px;
+    left: 20px;
+    background-color: yellow;
+    position: absolute;
+    z-index: 2;
+}
+.three {
+	top: 20px;
+    left: 40px;
+    background-color: green;
+    position: absolute;
+    z-index: 3;
+}
+#wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    height: 450px;
+    position: relative;
+}
+</style>
+</body>
+</html>
